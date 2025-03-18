@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./portfolio.css";
-import { motion, useInView, useScroll, useTransform } from "motion/react";
+import { motion, useInView, useScroll, useTransform } from "framer-motion";
 
 const items = [
   {
@@ -13,7 +13,7 @@ const items = [
   },
   {
     id: 2,
-    img: "/p2.jpg",
+    img: "/p2.png",
     title: "Digital Marketing Agency",
     desc:
       "We developed a visually stunning and user-friendly website for jupiter, designed to effectively showcase their digital marketing services and portfolio. The site features a responsive design, an interactive case study gallery, and dedicated service pages that highlight their expertise in SEO, social media marketing, and content creation. With a user-friendly content management system in place, pravin can easily update content and manage client inquiries, enhancing engagement and streamlining communication. The new website not only reflects their brand identity but also elevates their online presence, positioning them as a leader in the digital marketing space.",
@@ -109,7 +109,7 @@ const ListItem = ({ item }) => {
   );
 };
 
-const Portfolio = () => {
+const Projects = () => {
   const [containerDistance, setContainerDistance] = useState(0);
   const ref = useRef(null);
 
@@ -191,4 +191,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Projects;
